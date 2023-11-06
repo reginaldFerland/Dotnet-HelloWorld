@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>fd01641a-a084-493c-90d8-5984737d9cdd</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileTag>reginaldferland/dotnet-helloworld</DockerfileTag>
   </PropertyGroup>
 
   <ItemGroup>
