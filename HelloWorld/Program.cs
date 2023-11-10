@@ -21,7 +21,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapHealthChecks("/health/ready");
+var healthCheckUrl = Environment.GetEnvironmentVariable("HealthCheckUrl") ?? "/health/ready";
+
+app.MapHealthChecks(healthCheckUrl);
 
 app.UseHttpsRedirection();
 
